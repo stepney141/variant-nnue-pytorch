@@ -3,11 +3,11 @@ name = "variant-nnue-pytorch"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 dependencies = [
     "chess>=1.11.2",
     "cupy-cuda11x>=13.6.0",
-    "matplotlib>=3.10.7",
+    "matplotlib",
     "pytorch-lightning==1.9.5",
     "tensorboard>=2.20.0",
     "torch>=2.7.0",
