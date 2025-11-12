@@ -10,5 +10,18 @@ dependencies = [
     "matplotlib>=3.10.7",
     "pytorch-lightning==1.9.5",
     "tensorboard>=2.20.0",
-    "torch>=2.9.0",
+    "torch>=2.7.0",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu118"
+url = "https://download.pytorch.org/whl/cu118"
+explicit = true
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu118", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+torchvision = [
+  { index = "pytorch-cu118", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
 ]
